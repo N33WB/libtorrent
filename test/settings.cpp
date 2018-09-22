@@ -40,6 +40,7 @@ libtorrent::settings_pack settings()
 {
 	const int mask = alert::all_categories
 		& ~(alert::progress_notification
+			| alert::block_progress_notification
 			| alert::performance_warning
 			| alert::stats_notification
 			| alert::picker_log_notification);
